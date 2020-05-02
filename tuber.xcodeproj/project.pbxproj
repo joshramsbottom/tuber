@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		037229A7245C68DF0052ED54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037229A6245C68DF0052ED54 /* AppDelegate.swift */; };
-		037229A9245C68DF0052ED54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037229A8245C68DF0052ED54 /* ViewController.swift */; };
 		037229AB245C68E00052ED54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 037229AA245C68E00052ED54 /* Assets.xcassets */; };
 		037229AE245C68E00052ED54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 037229AC245C68E00052ED54 /* Main.storyboard */; };
 		037229BA245C68E00052ED54 /* tuberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037229B9245C68E00052ED54 /* tuberTests.swift */; };
 		037229C5245C68E00052ED54 /* tuberUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037229C4245C68E00052ED54 /* tuberUITests.swift */; };
+		037229D3245C7A350052ED54 /* TuberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037229D2245C7A350052ED54 /* TuberViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +35,6 @@
 /* Begin PBXFileReference section */
 		037229A3245C68DF0052ED54 /* tuber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tuber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		037229A6245C68DF0052ED54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		037229A8245C68DF0052ED54 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		037229AA245C68E00052ED54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		037229AD245C68E00052ED54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		037229AF245C68E00052ED54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,6 +45,7 @@
 		037229C0245C68E00052ED54 /* tuberUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tuberUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		037229C4245C68E00052ED54 /* tuberUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tuberUITests.swift; sourceTree = "<group>"; };
 		037229C6245C68E00052ED54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		037229D2245C7A350052ED54 /* TuberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuberViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +97,9 @@
 			isa = PBXGroup;
 			children = (
 				037229A6245C68DF0052ED54 /* AppDelegate.swift */,
-				037229A8245C68DF0052ED54 /* ViewController.swift */,
 				037229AA245C68E00052ED54 /* Assets.xcassets */,
 				037229AC245C68E00052ED54 /* Main.storyboard */,
+				037229D2245C7A350052ED54 /* TuberViewController.swift */,
 				037229AF245C68E00052ED54 /* Info.plist */,
 				037229B0245C68E00052ED54 /* tuber.entitlements */,
 			);
@@ -254,7 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				037229A9245C68DF0052ED54 /* ViewController.swift in Sources */,
+				037229D3245C7A350052ED54 /* TuberViewController.swift in Sources */,
 				037229A7245C68DF0052ED54 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,6 +427,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jramsbottom.tuber;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -445,6 +446,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jramsbottom.tuber;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
