@@ -2,7 +2,13 @@
   "images" : [
     {
       "idiom" : "mac",
-      "filename" : "np_download_888749_000000.png"
+      "filename" : "carrot-solid.png",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "mac",
+      "filename" : "carrot-solid2.png",
+      "scale" : "2x"
     }
   ],
   "info" : {
